@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESP32 Nastavenia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo ESP32" class="logo">
+  </div>
+
+  <h1>OZONE GENERATOR</h1>
+
+  <div class="card">
+    <label for="rtc">Actual time:</label>
+    <input type="datetime-local" id="rtc">
+  </div>
+
+  <div class="card">
+    <label for="onTime">Start time:</label>
+    <input type="time" id="onTime">
+
+    <label for="offTime">End of production:</label>
+    <input type="time" id="offTime">
+  </div>
+
+  <div class="card">
+    <label for="power">Power: <span id="powerVal">50%</span></label>
+    <input type="range" id="power" min="0" max="100" value="50">
+  </div>
+
+  <button onclick="saveSettings()">Save settings</button>
+
+  <p id="statusMsg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
