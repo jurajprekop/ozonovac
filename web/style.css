@@ -1,0 +1,85 @@
+/* Reset a full-screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #d9e2f3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container box */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Logo */
+.logo-container {
+    margin-bottom: 20px;
+}
+.logo {
+    width: 120px;
+}
+
+/* Card sections */
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="time"],
+input[type="datetime-local"],
+input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Range value display */
+#powerVal {
+    font-weight: bold;
+    float: right;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #0078ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+/* Status message */
+#statusMsg {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
